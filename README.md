@@ -2,6 +2,40 @@
 Apenas um simples leitor de arquivos balbFile.<br>
 Criado pela necessidade imediata de um leitor de arquivos extrememente simples e leve.
 
+## Importando para o seu projeto
+Maven:
+```maven
+  <repositories>
+		<repository>
+		    <id>jitpack.io</id>
+		    <url>https://jitpack.io</url>
+		</repository>
+	</repositories>
+  
+	<dependency>
+	    <groupId>com.github.SrBalbucio</groupId>
+	    <artifactId>balbFile</artifactId>
+	    <version>1.0</version>
+	</dependency>
+```
+
+Gradle:
+```gradle
+
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+  
+	dependencies {
+	        implementation 'com.github.SrBalbucio:balbFile:1.0'
+	}
+  ```
+
+Não achou o que precisa? Veja em: https://jitpack.io/#SrBalbucio/balbFile/1.0
+
 ## Como criar um arquivo
 A criação de um arquivo usando o balbFile é muito simples:
 ```java
